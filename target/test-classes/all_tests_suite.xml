@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!--<suite name="All Pet Store Tests">-->
+<!--    jezeli chcemy wielowatkowo to tak jak nizej to wyzej-->
+<suite name="All Pet Store Tests" parallel="tests" thread-count="2">
+
+<!--    te testy beda teraz dzialaly z tym co jest w tej klasie utils-->
+    <listeners>
+        <listener class-name="testowanieObiektowe.utils.tesnng.listeners.TestListener"/>
+        <listener class-name="testowanieObiektowe.utils.tesnng.listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Negative Login Tests">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="testowanieObiektowe.tests.FailedLoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Positive Login Tests">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="testowanieObiektowe.tests.PositiveLoginTest"/>
+        </classes>
+    </test>
+
+</suite>

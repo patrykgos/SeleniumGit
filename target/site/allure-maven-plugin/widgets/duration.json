@@ -1,0 +1,21 @@
+[ {
+  "uid" : "3dcc836925c4c0d3",
+  "name" : "tryToLogInWithCorrectLoginAndPassword",
+  "time" : {
+    "start" : 1686764842351,
+    "stop" : 1686764853340,
+    "duration" : 10989
+  },
+  "status" : "broken",
+  "severity" : "blocker"
+}, {
+  "uid" : "d440d9b58e7959d7",
+  "name" : "tryToLogInWithWrongUsernameAndPassword",
+  "time" : {
+    "start" : 1686764842351,
+    "stop" : 1686764843004,
+    "duration" : 653
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

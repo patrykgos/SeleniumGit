@@ -1,0 +1,43 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-LA5VBBU",
+    "children" : [ {
+      "name" : "18976@DESKTOP-LA5VBBU.TestNG-tests-2(35)",
+      "children" : [ {
+        "name" : "tryToLogInWithCorrectLoginAndPassword",
+        "uid" : "3dcc836925c4c0d3",
+        "parentUid" : "016a277ed56cb4626ba82c3f6375d078",
+        "status" : "broken",
+        "time" : {
+          "start" : 1686764842351,
+          "stop" : 1686764853340,
+          "duration" : 10989
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "CHROME" ]
+      } ],
+      "uid" : "016a277ed56cb4626ba82c3f6375d078"
+    }, {
+      "name" : "18976@DESKTOP-LA5VBBU.TestNG-tests-1(34)",
+      "children" : [ {
+        "name" : "tryToLogInWithWrongUsernameAndPassword",
+        "uid" : "d440d9b58e7959d7",
+        "parentUid" : "202ac72c60a215cba77d5e6b1309ee6e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686764842351,
+          "stop" : 1686764843004,
+          "duration" : 653
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "CHROME" ]
+      } ],
+      "uid" : "202ac72c60a215cba77d5e6b1309ee6e"
+    } ],
+    "uid" : "6b8c941e0c4ab7cde2b9d895c7cc6a2f"
+  } ]
+}

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-14T19:47:19 CEST" name="All Pet Store Tests" finished-at="2023-06-14T19:47:33 CEST" duration-ms="13650">
+    <groups>
+    </groups>
+    <test started-at="2023-06-14T19:47:19 CEST" name="Negative Login Tests" finished-at="2023-06-14T19:47:23 CEST" duration-ms="3315">
+      <class name="testowanieObiektowe.tests.FailedLoginTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testowanieObiektowe.tests.FailedLoginTest@3596b249]" started-at="2023-06-14T19:47:19 CEST" name="beforeClass" finished-at="2023-06-14T19:47:19 CEST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeTest(testowanieObiektowe.dirver.BrowserType)[pri:0, instance:testowanieObiektowe.tests.FailedLoginTest@3596b249]" started-at="2023-06-14T19:47:19 CEST" name="beforeTest" finished-at="2023-06-14T19:47:22 CEST" duration-ms="2395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="tryToLogInWithWrongUsernameAndPassword()[pri:0, instance:testowanieObiektowe.tests.FailedLoginTest@3596b249]" started-at="2023-06-14T19:47:22 CEST" name="tryToLogInWithWrongUsernameAndPassword" finished-at="2023-06-14T19:47:23 CEST" duration-ms="671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tryToLogInWithWrongUsernameAndPassword -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testowanieObiektowe.tests.FailedLoginTest@3596b249]" started-at="2023-06-14T19:47:23 CEST" name="afterMethod" finished-at="2023-06-14T19:47:23 CEST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testowanieObiektowe.tests.FailedLoginTest -->
+    </test> <!-- Negative Login Tests -->
+    <test started-at="2023-06-14T19:47:19 CEST" name="Positive Login Tests" finished-at="2023-06-14T19:47:33 CEST" duration-ms="13650">
+      <class name="testowanieObiektowe.tests.PositiveLoginTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testowanieObiektowe.tests.PositiveLoginTest@4087c7fc]" started-at="2023-06-14T19:47:19 CEST" name="beforeClass" finished-at="2023-06-14T19:47:19 CEST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeTest(testowanieObiektowe.dirver.BrowserType)[pri:0, instance:testowanieObiektowe.tests.PositiveLoginTest@4087c7fc]" started-at="2023-06-14T19:47:19 CEST" name="beforeTest" finished-at="2023-06-14T19:47:22 CEST" duration-ms="2412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="tryToLogInWithCorrectLoginAndPassword()[pri:0, instance:testowanieObiektowe.tests.PositiveLoginTest@4087c7fc]" started-at="2023-06-14T19:47:22 CEST" name="tryToLogInWithCorrectLoginAndPassword" finished-at="2023-06-14T19:47:33 CEST" duration-ms="10843" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: #Banner img' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: #Banner img' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at testowanieObiektowe.waits.WaitForElement.waitUntilElementsVisible(WaitForElement.java:19)
+at testowanieObiektowe.page.objects.FooterPage.assertThatDogBannerIsDisplayed(FooterPage.java:27)
+at testowanieObiektowe.tests.PositiveLoginTest.tryToLogInWithCorrectLoginAndPassword(PositiveLoginTest.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#Banner img"}
+  (Session info: chrome=114.0.5735.133)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca76e6e2e29010a0cb6f47ea386f1316, findElement {using=css selector, value=#Banner img}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Patrol\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58035}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58035/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca76e6e2e29010a0cb6f47ea386f1316
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:247)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:314)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$WSaLkHGC.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy61.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tryToLogInWithCorrectLoginAndPassword -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testowanieObiektowe.tests.PositiveLoginTest@4087c7fc]" started-at="2023-06-14T19:47:33 CEST" name="afterMethod" finished-at="2023-06-14T19:47:33 CEST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testowanieObiektowe.tests.PositiveLoginTest -->
+    </test> <!-- Positive Login Tests -->
+  </suite> <!-- All Pet Store Tests -->
+</testng-results>

@@ -1,0 +1,41 @@
+{
+  "cf994676bd71018cc3264a6c17ff673b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3dcc836925c4c0d3",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: #Banner img' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1686764842351,
+        "stop" : 1686764853340,
+        "duration" : 10989
+      }
+    } ]
+  },
+  "681b9969f2b44c74a75757849bd88068" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d440d9b58e7959d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1686764842351,
+        "stop" : 1686764843004,
+        "duration" : 653
+      }
+    } ]
+  }
+}
