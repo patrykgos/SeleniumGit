@@ -8,6 +8,7 @@ pipeline {
         }
         stage('Execute test') {
             steps {
+                sh 'nohup your_command' // Dodany krok uruchamiający nohup
                 sh 'mvn test'
             }
         }
