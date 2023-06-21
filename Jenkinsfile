@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Execute test') {
             steps {
-                sh 'nohup your_command' // Dodany krok uruchamiający nohup
+                bat 'start /B cmd /C your_command' // Uruchomienie procesu w tle w systemie Windows
                 sh 'mvn test'
             }
         }
